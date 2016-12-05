@@ -1,22 +1,23 @@
 ##How to Contribute
 1. Find a [issue tagged with "help wanted"](https://github.com/TheOdinProject/theodinproject/labels/Help%20Wanted) to work on. Please comment on the issue to say you are working on it.
+
 2. Install the app on your local machine.
 
-  * Fork and clone the app to your local machine, use [this guide](https://help.github.com/articles/fork-a-repo/) if you don't know how to do that
-  * Set the upstream remote so you can keep your copy of the app synced with the original. To do that go to your terminal and `cd` into your cloned odin project app directory. Then use one of the following commands:
+ * Fork and clone the app to your local machine, use [this guide](https://help.github.com/articles/fork-a-repo/) if you don't know how to do that
+ * Set the upstream remote so you can keep your copy of the app synced with the original. To do that go to your terminal and `cd` into your cloned odin project app directory. Then use one of the following commands:
 
- If you have ssh set up with Git
- ```
- $ git remote add upstream git@github.com:TheOdinProject/theodinproject.git
- ```
- Otherwise
- ```
- $ git remote add upstream https://github.com/TheOdinProject/theodinproject.git
- ```
+    If you have ssh set up with Git
+    ```
+    $ git remote add upstream git@github.com:TheOdinProject/theodinproject.git
+    ```
+    Otherwise
+    ```
+    $ git remote add upstream https://github.com/TheOdinProject/theodinproject.git
+    ```
 
- * Now set the app up using one of the following operating system specific guides
+ * Use one of the following operating system specific guides to set up the Odin Project app on your machine:
    * [Linux installation guide](https://github.com/TheOdinProject/theodinproject/wiki/Linux-Installation-Guide)
-   * [Mac installation guide](https://github.com/TheOdinProject/theodinproject/wiki/OSX-Installation-Guide)
+    * [Mac installation guide](https://github.com/TheOdinProject/theodinproject/wiki/OSX-Installation-Guide)
 
 3. Before you start working on your issue create a branch and name it like the following examples:
 
@@ -32,6 +33,7 @@
 4. When you have finished and are ready to submit a Pull request:
 
   **Before you submit your pull request ensure all the tests pass**
+
   rspec tests
   ```
   $ rspec
@@ -46,7 +48,7 @@
   $ git push origin <your branch name here>
   ```
   **Create a pull request**
-   * Go to your fork on github and create a pull request, a button should appear when you go to your fork on Github that will allow you to create a pull request to the original Odin Project Repo.
+   * Go to your fork on Github after you have pushed up your branch. A new button should be visible near the top of the page. It will allow you to create a pull request to the original Odin Project Repo.
 
   * Please Link to the issue your pull request resolves in the body of your pull request.
 
