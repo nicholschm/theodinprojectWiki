@@ -3,13 +3,13 @@
 2. Install the app on your local machine.
 
   * Fork and clone the app to your local machine, use [this guide](https://help.github.com/articles/fork-a-repo/) if you don't know how to do that
-  * set the upstream remote so you can keep your copy of the app synced with the original. To do that go to your terminal and `cd` into the odin project app directory. Then use one of the following commands:
+  * Set the upstream remote so you can keep your copy of the app synced with the original. To do that go to your terminal and `cd` into your cloned odin project app directory. Then use one of the following commands:
 
- if you have ssh set up with Git
+ If you have ssh set up with Git
  ```
  $ git remote add upstream git@github.com:TheOdinProject/theodinproject.git
  ```
- otherwise
+ Otherwise
  ```
  $ git remote add upstream https://github.com/TheOdinProject/theodinproject.git
  ```
