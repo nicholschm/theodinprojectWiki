@@ -13,9 +13,10 @@
  ```
  $ git remote add upstream https://github.com/TheOdinProject/theodinproject.git
  ```
-  * Now set the app up using one of the following operating system specific guides
-    * [Linux installation guide](https://github.com/TheOdinProject/theodinproject/wiki/Linux-Installation-Guide)
-    * [Mac installation guide](https://github.com/TheOdinProject/theodinproject/wiki/OSX-Installation-Guide)
+
+ * Now set the app up using one of the following operating system specific guides
+   * [Linux installation guide](https://github.com/TheOdinProject/theodinproject/wiki/Linux-Installation-Guide)
+   * [Mac installation guide](https://github.com/TheOdinProject/theodinproject/wiki/OSX-Installation-Guide)
 
 3. Before you start working on your issue create a branch and name it like the following examples:
 
