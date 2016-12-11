@@ -22,7 +22,7 @@ postgres=# \password yourusername
 ```
 
 ## Installing Gems and Migrating the Database
-Now we need to pull down TOP's repository. To do this, go ahead and `fork` [TOP](https://github.com/TheOdinProject/theodinproject.git) repository. In your terminal run:
+Now we need to pull down TOP's repository. To do this, go ahead and fork [TOP](https://github.com/TheOdinProject/theodinproject.git) repository. In your terminal run:
 ```
 $ git clone https://github.com/YOUR_USERNAME_HERE/theodinproject.git
 # Once git finishes cloning, cd into the project directory with
@@ -78,9 +78,9 @@ Next you need to seed the database with the course and lesson data.
 $ rails db:seed
 ```
 
-We pull in the lesson content from the Odin [curriculum repository](https://github.com/TheOdinProject/curriculum) on Github. We have created a rake task to do this easily.
+We pull in the lesson content from the Odin [curriculum repository](https://github.com/TheOdinProject/curriculum) on Github. We have created a `rake` task to do this easily.
 ```
-$ rake rake curriculum:update_content
+$ rake curriculum:update_content
 ```
 
 ## Running the app locally
