@@ -1,5 +1,5 @@
 ##How to Contribute
-1. Find a [issue tagged with "help wanted"](https://github.com/TheOdinProject/theodinproject/labels/Help%20Wanted) to work on. Please comment on the issue to say you are working on it.
+1. Find a [issue tagged with "help wanted"](https://github.com/TheOdinProject/theodinproject/labels/Help%20Wanted) to work on. Please comment on the issue to let others know you are working on it.
 
 2. Install the app on your local machine.
 
