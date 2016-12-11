@@ -1,7 +1,7 @@
 **This guide assumes that you have already installed Ruby on rails. To get instructions on how to do that go through the installations project [here](http://www.theodinproject.com/web-development-101/installations)**
 
 ## Set up Postgres
-Skip this is you have already installed and setup a user for postgresql.
+Skip this if you have already installed and setup a user for postgresql.
 First, we add the repository and then install postgresql and its dependencies:
 ```
 $ sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
