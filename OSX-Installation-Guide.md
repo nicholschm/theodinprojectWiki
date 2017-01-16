@@ -71,7 +71,7 @@ You will need a Github API token to get all the tests to pass and for getting al
 
 First create a application.yml with figaro, this is where you will store your Github API token.
 ```
-$ rails generate figaro:install
+$ figaro install
 ```
 
 Next go to [personal access tokens](https://github.com/settings/tokens) in your Github user account settings and click the "generate new token" button. This will bring you to a new page. Give your token a description in the box provided, Something like "Odin " will do. Once that is done click the "generate token" button at the bottom of the page. The token highlighted in green is your new Github API token.
