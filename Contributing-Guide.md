@@ -1,4 +1,4 @@
-##How to Contribute
+## How to Contribute
 1. Find a [issue tagged with "help wanted"](https://github.com/TheOdinProject/theodinproject/labels/Help%20Wanted) to work on. Please comment on the issue to let others know you are working on it.
 
 2. Install the app on your local machine.
@@ -52,5 +52,5 @@
 
   * Please Link to the issue your pull request resolves in the body of your pull request.
 
-##Need Help with Anything Here?
+## Need Help with Anything Here?
 Please let us know if you require any help doing any of the steps in this guide in our [contributing channel on gitter](https://gitter.im/TheOdinProject/Contributing)
