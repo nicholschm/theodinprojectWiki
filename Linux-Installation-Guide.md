@@ -1,4 +1,4 @@
-**This guide assumes that you have already installed Ruby on rails. To get instructions on how to do that go through the installations project [here](http://www.theodinproject.com/web-development-101/installations)**
+**This guide assumes that you have already installed Ruby and rails. To get instructions on how to do that go through the installations project [here](http://www.theodinproject.com/web-development-101/installations)**
 
 ## Set up Postgres
 Skip this if you have already installed and setup a user for postgresql.
@@ -20,9 +20,13 @@ postgres=# \du
 postgres=# \password yourusername
 # Type \q to quit
 ```
+If you encounter an error, `could not connect to server` or `PG::ConnectionBad`, you will need to start the PG server:
+```
+sudo service postgresql start
+```
 
 ## Installing Gems and Migrating the Database
-Now we need to pull down TOP's repository. To do this, go ahead and fork [TOP](https://github.com/TheOdinProject/theodinproject.git) repository. In your terminal run:
+Now we need to pull down TOP's repository. To do this, go ahead and `fork` [TOP](https://github.com/TheOdinProject/theodinproject.git) repository. In your terminal run:
 ```
 $ git clone https://github.com/YOUR_USERNAME_HERE/theodinproject.git
 # Once git finishes cloning, cd into the project directory with
@@ -78,7 +82,7 @@ Next you need to seed the database with the course and lesson data.
 $ rails db:seed
 ```
 
-We pull in the lesson content from the Odin [curriculum repository](https://github.com/TheOdinProject/curriculum) on Github. We have created a `rake` task to do this easily.
+We pull in the lesson content from the Odin [curriculum repository](https://github.com/TheOdinProject/curriculum) on Github. We have created a rake task to do this easily.
 ```
 $ rake curriculum:update_content
 ```
@@ -123,4 +127,4 @@ GITHUB_SECRET: <your client secret here>
 To test all this is working correctly, run the app locally and try to sign up with Github.
 
 ## Need Help?
-If you have any problems getting anything set up in this guide please let us know in our [contributing gitter channel](https://gitter.im/TheOdinProject/Contributing)
+If you have any problems getting anything set up in this guide please let us know in our [contributing gitter channel](https://gitter.im/TheOdinProject/Contributing).
