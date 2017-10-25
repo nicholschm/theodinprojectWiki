@@ -14,6 +14,9 @@ Next we need to create our role. Run the following:
 ```
 $ sudo -u postgres createuser yourusername -s
 $ sudo -i -u postgres psql
+```
+
+```
 # Check that the user was created with:
 postgres=# \du
 # If you want to add a password to the role you created, run:
@@ -64,7 +67,7 @@ GITHUB_API_TOKEN: <your api token here>
 ```
 
 ## Run the Tests
-You can now run all the tests, they should all be green
+You can now run all the tests, they should all be green.
 
 To run the rspec unit tests:
 ```
@@ -115,7 +118,7 @@ Application Description
 Authorization callback URL
 `http://localhost:3000/users/auth/github/callback`
 
-Click the "Resgister application" button. This will display your `Client ID` and `Client Secret` which is what you will use to get OAuth working on your local machine.
+Click the "Register application" button. This will display your `Client ID` and `Client Secret` which is what you will use to get OAuth working on your local machine.
 
 Go to `config/application.yml` in your local project directory for The Odin Project and fill in the following:
 ```
