@@ -93,11 +93,14 @@ $ rake curriculum:update_content
 ## Running the app locally
 You can now run the app on your local machine.
 
-start the server
+Start the server
 `$ rails server`
 
 Go to the app in your browser:
 `http://localhost:3000`
+
+When your local machine reboots, you will have to restart the PG server by running:
+`sudo service postgresql start`
 
 ## Setting up Github Omniauth (Optional)
 We allow users to create an account on the site with Github OAuth. To get this feature working locally follow the instructions in this section.
