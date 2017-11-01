@@ -1,0 +1,1 @@
+The Odin Project's Code of Conduct can be found in the project's doc folder. [LINK](https://github.com/TheOdinProject/theodinproject/tree/master/doc)
