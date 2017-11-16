@@ -81,6 +81,29 @@ Copy your Github API token and go back to the `config/application.yml` file in y
 GITHUB_API_TOKEN: <your api token here>
 ```
 
+## Get a Mailchimp API Key and List ID
+
+[Mailchimp](https://mailchimp.com/) integration is setup to add newly registered users to a specified mailing list. This is done via the [Mailchimp API](https://developer.mailchimp.com/) and gem [Gibbon](https://github.com/amro/gibbon). In order to enable this functionality in your local development and test environments you'll need to:
+
+- Create a [Mailchimp account](https://login.mailchimp.com/signup/)
+- Get a Mailchimp [API key](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+- Create a [list](https://developer.mailchimp.com/documentation/mailchimp/reference/lists/) to which development/test members will be added
+- Get the [list ID](https://kb.mailchimp.com/lists/manage-contacts/find-your-list-id)
+
+Finally, you need to add the API key and list ID to your `config/application.yml`:
+
+```yaml
+default: &default
+  MAILCHIMP_API_KEY: <your api key here>
+  MAILCHIMP_LIST_ID: <your list id here>
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+```
+
 ## Run the Tests
 You can now run all the tests, they should all be green
 
