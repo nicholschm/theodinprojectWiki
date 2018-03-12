@@ -10,6 +10,10 @@ $ sudo apt-get update
 $ sudo apt-get install postgresql-common
 $ sudo apt-get install postgresql-9.3 libpq-dev
 ```
+Before we can continue, we need to start the PG server with this command: 
+```
+sudo service postgresql start
+```
 Next we need to create our role. Run the following:
 ```
 $ sudo -u postgres createuser yourusername -s
@@ -23,7 +27,7 @@ postgres=# \du
 postgres=# \password yourusername
 # Type \q to quit
 ```
-If you encounter an error, `could not connect to server` or `PG::ConnectionBad`, you will need to start the PG server:
+If you encounter an error, `could not connect to server` or `PG::ConnectionBad`, try to start the PG server again:
 ```
 sudo service postgresql start
 ```
