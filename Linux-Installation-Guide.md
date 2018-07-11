@@ -2,7 +2,14 @@
 
 ## Set up Postgres
 Skip this if you have already installed and setup a user for postgresql.
-First, we add the repository and then install postgresql and its dependencies:
+
+If you're running Ubuntu, postgresql packages are aready in the apt repositories:
+```
+$ sudo apt-get update
+$ sudo apt-get install postgresql postgresql-contrib libpq-dev
+```
+
+If not, you'll need to add the postgres repo to your sources and install:
 ```
 $ sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
 $ wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
@@ -10,9 +17,13 @@ $ sudo apt-get update
 $ sudo apt-get install postgresql-common
 $ sudo apt-get install postgresql-9.3 libpq-dev
 ```
-Before we can continue, we need to start the PG server with this command: 
+
+Make sure the postgres server is running
 ```
-sudo service postgresql start
+sudo systemctl start postgresql
+
+# additionally, to enable postgres at system startup
+sudo systemctl enable postgresql
 ```
 Next we need to create our role. Run the following:
 ```
@@ -29,7 +40,7 @@ postgres=# \password yourusername
 ```
 If you encounter an error, `could not connect to server` or `PG::ConnectionBad`, try to start the PG server again:
 ```
-sudo service postgresql start
+$ sudo systemctl restart postgresql
 ```
 
 ## Installing Gems and Migrating the Database
@@ -39,12 +50,13 @@ $ git clone https://github.com/YOUR_USERNAME_HERE/theodinproject.git
 # Once git finishes cloning, cd into the project directory with
 $ cd theodinproject
 ```
-With all that taken care of, run `bundle` and everything should be green.
+
+With all that taken care of, install all the gems with `bundle`. Everything should be green:
 ```
 $ bundle install
 ```
 
-Once bundle finishes, go to `config/database.yml` and write your username and password (only if you added a password) of postgresql for the development and the test database (leave the production alone). Next we create and migrate the database:
+Once bundle finishes, go to `config/database.yml` and write your username and password (only if you added a password) of postgresql for the default section. Next we create and migrate the database:
 ```
 $ rake db:create
 $ rake db:migrate
