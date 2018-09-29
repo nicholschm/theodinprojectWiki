@@ -82,6 +82,8 @@ Copy your Github API token and go back to the `config/application.yml` file in y
 GITHUB_API_TOKEN: <your api token here>
 ```
 
+This Github API Token is used when updating the curriculum. Without it you may encounter rate-limiting errors.
+
 ## Get a Mailchimp API Key and List ID
 
 [Mailchimp](https://mailchimp.com/) integration is setup to add newly registered users to a specified mailing list. This is done via the [Mailchimp API](https://developer.mailchimp.com/) and gem [Gibbon](https://github.com/amro/gibbon). In order to enable this functionality in your local development and test environments you'll need to:
