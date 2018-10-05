@@ -116,11 +116,6 @@ To run the rspec unit tests:
 $ rspec
 ```
 
-To run the cucumber integration tests:
-```
-$ cucumber
-```
-
 ## Seeding the Database and Populating the Lesson content
 Next you need to seed the database with the course and lesson data.
 ```
