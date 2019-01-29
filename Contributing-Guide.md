@@ -34,13 +34,8 @@
 
   **Before you submit your pull request ensure all the tests pass**
 
-  rspec tests
   ```
   $ rspec
-  ```
-  cucumber tests
-  ```
-  $ cucumber
   ```
 
   **Push your branch to your fork**
