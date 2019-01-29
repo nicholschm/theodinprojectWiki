@@ -1,4 +1,4 @@
-**This guide assumes that you have already installed homebrew and Ruby on Rails. To get instructions on how to do that go through the installations project [here](https://www.theodinproject.com/courses/web-development-101/lessons/installations)**
+**This guide assumes that you have already installed homebrew and Ruby on Rails.
 
 ## Installing Postgresql:
 before installing postgres make sure that homebrew is up to date
