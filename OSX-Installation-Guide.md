@@ -1,4 +1,4 @@
-**This guide assumes that you have already installed homebrew and Ruby on Rails.
+**This guide assumes that you have already installed homebrew and Ruby on Rails.**
 
 ## Installing Postgresql:
 before installing postgres make sure that homebrew is up to date
