@@ -69,14 +69,9 @@ $ rake db:test:prepare
 ## Get a Github API Token
 You will need a Github API token to get all the tests to pass and for getting all the lesson content.
 
-First create a application.yml with figaro, this is where you will store your Github API token.
-```
-$ figaro install
-```
+Go to [personal access tokens](https://github.com/settings/tokens) in your Github user account settings and click the "generate new token" button. This will bring you to a new page. Give your token a description in the box provided, Something like "Odin " will do. Once that is done click the "generate token" button at the bottom of the page. The token highlighted in green is your new Github API token.
 
-Next go to [personal access tokens](https://github.com/settings/tokens) in your Github user account settings and click the "generate new token" button. This will bring you to a new page. Give your token a description in the box provided, Something like "Odin " will do. Once that is done click the "generate token" button at the bottom of the page. The token highlighted in green is your new Github API token.
-
-Copy your Github API token and go back to the `config/application.yml` file in your local Odin Project directory. Paste your API token in place of `<your api token here>` like the example below:
+Copy your Github API token and go to the `.env` file in your local Odin Project directory. Paste your API token in place of `<your api token here>` like the example below:
 ```
 GITHUB_API_TOKEN: <your api token here>
 ```
@@ -92,18 +87,11 @@ This Github API Token is used when updating the curriculum. Without it you may e
 - Create a [list](https://developer.mailchimp.com/documentation/mailchimp/reference/lists/) to which development/test members will be added
 - Get the [list ID](https://kb.mailchimp.com/lists/manage-contacts/find-your-list-id)
 
-Finally, you need to add the API key and list ID to your `config/application.yml`:
+Finally, you need to add the API key and list ID to your `.env`:
 
-```yaml
-default: &default
-  MAILCHIMP_API_KEY: <your api key here>
-  MAILCHIMP_LIST_ID: <your list id here>
-
-development:
-  <<: *default
-
-test:
-  <<: *default
+```
+MAILCHIMP_API_KEY: <your api key here>
+MAILCHIMP_LIST_ID: <your list id here>
 ```
 
 ## Run the Tests
@@ -155,7 +143,7 @@ Authorization callback URL
 
 Click the "Register application" button. This will display your `Client ID` and `Client Secret` which is what you will use to get OAuth working on your local machine.
 
-Go to `config/application.yml` in your local project directory for The Odin Project and fill in the following:
+Go to `.env` in your local project directory for The Odin Project and fill in the following:
 ```
 GITHUB_API_TOKEN: <your api token here>
 GITHUB_APP_ID: <your client ID here>
