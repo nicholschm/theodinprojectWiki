@@ -48,4 +48,4 @@
   * Please Link to the issue your pull request resolves in the body of your pull request.
 
 ## Need Help with Anything Here?
-Please let us know if you require any help doing any of the steps in this guide in our [contributing channel on gitter](https://gitter.im/TheOdinProject/Contributing)
+Please let us know if you require any help doing any of the steps in this guide in our [Admin room in Discord](https://discordapp.com/channels/505093832157691914/540903304046182425)
