@@ -28,7 +28,7 @@ $ lunchy start postgres
 $ lunchy stop postgres
 ```
 
-If you run into a issue such as `No daemon found matching 'postgres'` at this point have a look at [this guide](https://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/) to getting `lunchy` and `postgres` set up and running on OSX.
+If you run into a issue such as `No daemon found matching 'postgres'` at this point you can use [Postgres.app](https://postgresapp.com/) instead of lunchy to get `postgres` set up and running on OSX.
 
 create a new database for the odin project site:
 ```
@@ -71,7 +71,7 @@ You will need a Github API token to get all the tests to pass and for getting al
 
 Go to [personal access tokens](https://github.com/settings/tokens) in your Github user account settings and click the "generate new token" button. This will bring you to a new page. Give your token a description in the box provided, Something like "Odin " will do. Once that is done click the "generate token" button at the bottom of the page. The token highlighted in green is your new Github API token.
 
-Copy your Github API token and go to the `.env` file in your local Odin Project directory. Paste your API token in place of `<your api token here>` like the example below:
+Copy your Github API token and create `.env.local` file in your local Odin Project directory. Paste your API token in place of `<your api token here>` like the example below:
 ```
 GITHUB_API_TOKEN: <your api token here>
 ```
@@ -87,7 +87,7 @@ This Github API Token is used when updating the curriculum. Without it you may e
 - Create a [list](https://developer.mailchimp.com/documentation/mailchimp/reference/lists/) to which development/test members will be added
 - Get the [list ID](https://kb.mailchimp.com/lists/manage-contacts/find-your-list-id)
 
-Finally, you need to add the API key and list ID to your `.env`:
+Finally, you need to add the API key and list ID to your `.env.local`:
 
 ```
 MAILCHIMP_API_KEY: <your api key here>
@@ -143,7 +143,7 @@ Authorization callback URL
 
 Click the "Register application" button. This will display your `Client ID` and `Client Secret` which is what you will use to get OAuth working on your local machine.
 
-Go to `.env` in your local project directory for The Odin Project and fill in the following:
+Go to `.env.local` in your local project directory for The Odin Project and fill in the following:
 ```
 GITHUB_API_TOKEN: <your api token here>
 GITHUB_APP_ID: <your client ID here>
@@ -151,6 +151,52 @@ GITHUB_SECRET: <your client secret here>
 ```
 
 To test all this is working correctly, run the app locally and try to sign up with Github.
+
+## Setting up Google OAuth (Optional)
+We also allow users to create an account on the site with Google OAuth. To get this feature working locally follow the instructions in this section.
+
+Visit the [Google API Console](https://console.developers.google.com/) to obtain OAuth credentials and agree to terms of service.
+
+1. Click "Select a Project" drop down
+
+1. Click "New Project" button on top right
+
+    1. Set project name to `odin`
+
+    1. Location can be default `No Organization`
+
+    1. Click "Create" button
+
+1. Click "Credentials" in left nav.
+
+    1. Navigate to "OAuth Consent Screen" on top nav.
+
+        1. Set Application name `odin`
+
+        1. Scroll to bottom and click "Save" button
+
+  1. Click "Create Credentials" drop down
+
+      1. Select "OAuth Client ID"
+
+      1. Select "Web Application" for Application type
+
+      1.  Fill in the form fields with the following:
+
+          1.  Name: `odin`
+          
+          1.  Authorized Javascript Origins: `http://localhost:3000` *make sure to press Enter to add it*
+          
+          1.  Authorized redirects URIs: `http://localhost:3000/users/auth/google/callback` *make sure to press Enter to add it*
+
+          1.  Click "Create" button. This will display your `Client ID` and `Client Secret` which is what you will use to get OAuth working on your local machine.
+
+1. Go to `.env.local` in your local project directory for The Odin Project and fill in the following:
+    ```
+    GOOGLE_CLIENT_ID: <your client ID here>
+    GOOGLE_CLIENT_SECRET: <your client secret here>
+    ```
+To test all this is working correctly, run the app locally and try to sign up with Google.
 
 ## Need Help?
 If you have any problems getting anything set up in this guide please let us know in our [Admin room in Discord](https://discordapp.com/channels/505093832157691914/540903304046182425)
