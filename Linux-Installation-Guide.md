@@ -154,6 +154,8 @@ GITHUB_APP_ID: <your client ID here>
 GITHUB_SECRET: <your client secret here>
 ```
 
+To test all this is working correctly, run the app locally and try to sign up with Github.
+
 ## Setting up Google OAuth (Optional)
 We also allow users to create an account on the site with Google OAuth. To get this feature working locally follow the instructions in this section.
 
@@ -199,8 +201,6 @@ Visit the [Google API Console](https://console.developers.google.com/) to obtain
     GOOGLE_CLIENT_SECRET: <your client secret here>
     ```
 To test all this is working correctly, run the app locally and try to sign up with Google.
-
-To test all this is working correctly, run the app locally and try to sign up with Github.
 
 ## Need Help?
 If you have any problems getting anything set up in this guide please let us know in our [Admin room in Discord](https://discordapp.com/channels/505093832157691914/540903304046182425).
