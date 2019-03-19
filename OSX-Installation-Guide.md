@@ -57,13 +57,13 @@ Once bundle has finished installing everything its time to get the database set 
 
 create the database and migrate it
 ```
-$ rake db:create:all
-$ rake db:migrate
+$ rails db:create:all
+$ rails db:migrate
 ```
 
 create the test database
 ```
-$ rake db:test:prepare
+$ rails db:test:prepare
 ```
 
 ## Get a Github API Token
@@ -71,9 +71,15 @@ You will need a Github API token to get all the tests to pass and for getting al
 
 Go to [personal access tokens](https://github.com/settings/tokens) in your Github user account settings and click the "generate new token" button. This will bring you to a new page. Give your token a description in the box provided, Something like "Odin " will do. Once that is done click the "generate token" button at the bottom of the page. The token highlighted in green is your new Github API token.
 
-Copy your Github API token and create `.env.local` file in your local Odin Project directory. Paste your API token in place of `<your api token here>` like the example below:
+Copy your Github API token and create `.env` file with the content below, making sure to paste your API token in place of `<your api token here>`. Note that we comment out the APP_ID and SECRET as these are used for production.
 ```
+API_USERNAME: 'development'
+API_PASSWORD: 'qwerty123'
 GITHUB_API_TOKEN: <your api token here>
+#GITHUB_APP_ID: 1234
+#GITHUB_SECRET: 1234
+GOOGLE_CLIENT_ID: 1234
+GOOGLE_CLIENT_SECRET: 1234
 ```
 
 This Github API Token is used when updating the curriculum. Without it you may encounter rate-limiting errors.
@@ -87,7 +93,7 @@ This Github API Token is used when updating the curriculum. Without it you may e
 - Create a [list](https://developer.mailchimp.com/documentation/mailchimp/reference/lists/) to which development/test members will be added
 - Get the [list ID](https://kb.mailchimp.com/lists/manage-contacts/find-your-list-id)
 
-Finally, you need to add the API key and list ID to your `.env.local`:
+Finally, you need to add the API key and list ID to your `.env`:
 
 ```
 MAILCHIMP_API_KEY: <your api key here>
@@ -110,7 +116,7 @@ $ rails db:seed
 
 We pull in the lesson content from the Odin [curriculum repository](https://github.com/TheOdinProject/curriculum) on Github. We have created a rake task to do this easily.
 ```
-$ rake curriculum:update_content
+$ rails curriculum:update_content
 ```
 
 ## Running the app locally
@@ -143,7 +149,7 @@ Authorization callback URL
 
 Click the "Register application" button. This will display your `Client ID` and `Client Secret` which is what you will use to get OAuth working on your local machine.
 
-Go to `.env.local` in your local project directory for The Odin Project and fill in the following:
+Go to `.env` in your local project directory for The Odin Project and fill in the following:
 ```
 GITHUB_API_TOKEN: <your api token here>
 GITHUB_APP_ID: <your client ID here>
@@ -191,7 +197,7 @@ Visit the [Google API Console](https://console.developers.google.com/) to obtain
 
           1.  Click "Create" button. This will display your `Client ID` and `Client Secret` which is what you will use to get OAuth working on your local machine.
 
-1. Go to `.env.local` in your local project directory for The Odin Project and fill in the following:
+1. Go to `.env` in your local project directory for The Odin Project and fill in the following:
     ```
     GOOGLE_CLIENT_ID: <your client ID here>
     GOOGLE_CLIENT_SECRET: <your client secret here>
