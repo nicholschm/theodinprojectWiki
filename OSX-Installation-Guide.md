@@ -39,5 +39,4 @@ postgres=# \q
 ```
 (Be sure to change `your-username` and `your-password-here` with usernames and passwords of your choosing)
 
-
-Thats it for postgresql, next we will install all of the gems that are needed.
+With PostgreSQL installed, continue on with the [Running TOP Locally](https://github.com/TheOdinProject/theodinproject/wiki/Running-The-Odin-Project-Locally) instructions
