@@ -8,6 +8,8 @@ The Odin Project uses PostgreSQL as it's database. You will need to install it i
 ### via Postgres.app:
 The easiest way to get up and running with Postgres is to install [Postgres.App](https://postgresapp.com/) - a nifty program wrapper for PostgreSQL. Once downloaded, install the app and run it.
 
+To log into the psql command line click on the elephant icon in your menu bar and choose **Open Postgres** then double click on the [database icon with your username under it.](https://imgur.com/4wHTwxv.png) Once open, continue with [Database Setup](#database-setup)
+
 ### via Brew:
 PostgreSQL is also available via Brew package manager. Before installing postgres make sure that homebrew is up to date.
 ```
@@ -28,11 +30,14 @@ $ pg_ctl -D /usr/local/var/postgres start
 $ brew services start postgresql
 ```
 
-## Database Setup
-With Postgres installed, we can now turn our attention to setting up the database.  We will be logging into the postgres command line to set up a new user.
-```
+Finally, we'll log into the PostgreSQL command line:
+```bash
 $ psql postgres
+```
 
+## Database Setup
+With Postgres installed, we can now turn our attention to setting up the database.  We will be using the postgres command line to set up a new user.
+```
 postgres=# CREATE USER your-username WITH PASSWORD your-password-here;
 postgres=# ALTER ROLE your-username WITH CREATEDB;
 postgres=# \q
