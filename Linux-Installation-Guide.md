@@ -22,7 +22,7 @@ Make sure the postgres server is running
 ```
 sudo systemctl start postgresql
 
-# additionally, to enable postgres at system startup
+# OPTIONAL: start postgres at system startup
 sudo systemctl enable postgresql
 ```
 Next we need to create our role. Run the following:
@@ -37,10 +37,6 @@ postgres=# \du
 # If you want to add a password to the role you created, run:
 postgres=# \password yourusername
 # Type \q to quit
-```
-If you encounter an error, `could not connect to server` or `PG::ConnectionBad`, try to start the PG server again:
-```
-$ sudo systemctl restart postgresql
 ```
 
 With PostgreSQL installed, continue on with the [Running TOP Locally](https://github.com/TheOdinProject/theodinproject/wiki/Running-The-Odin-Project-Locally) instructions
