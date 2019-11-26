@@ -38,10 +38,10 @@ $ psql postgres
 ## Database Setup
 With Postgres installed, we can now turn our attention to setting up the database.  We will be using the postgres command line to set up a new user.
 ```
-postgres=# CREATE USER your-username WITH PASSWORD your-password-here;
+postgres=# CREATE USER your-username WITH PASSWORD 'your-password-here';
 postgres=# ALTER ROLE your-username WITH CREATEDB;
 postgres=# \q
 ```
-(Be sure to change `your-username` and `your-password-here` with usernames and passwords of your choosing)
+(Be sure to change `your-username` and `your-password-here` with usernames and passwords of your choosing. Note that `your-username` in the above commands should **not** have `'single quotes'` around it, but the `your-password-here` should have single quotes.)
 
-With PostgreSQL installed, continue on with the [Running TOP Locally](https://github.com/TheOdinProject/theodinproject/wiki/Running-The-Odin-Project-Locally) instructions
+With PostgreSQL installed, continue on with the [Running TOP Locally](https://github.com/TheOdinProject/theodinproject/wiki/Running-The-Odin-Project-Locally) instructions.
