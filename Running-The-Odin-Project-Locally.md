@@ -43,7 +43,7 @@ You will need a Github API Token when running TOP locally to update the curricul
 
 You can obtain an API Token by going to [personal access tokens](https://github.com/settings/tokens) in your Github user account settings and click the "generate new token" button. This will bring you to a new page. Give your token a description in the box provided, Something like "Odin " will do. Once that is done click the "generate token" button at the bottom of the page. The token highlighted in green is your new Github API token.
 
-Copy your Github API token and edit your `.env.local` file with the content below, making sure to paste your API token in place of `<your api token here>`. Note that the `APP_ID` and `SECRET` are commented out. These are used in production are are not needed locally.
+Copy your Github API token and edit your `.env.local` file with the content below, making sure to paste your API token in place of `<your api token here>`. Note that the `APP_ID` and `SECRET` are commented out. These are used in production and are not needed locally.
 ```
 GITHUB_API_TOKEN: <your api token here>
 #GITHUB_APP_ID: 1234
