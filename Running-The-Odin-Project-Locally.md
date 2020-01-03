@@ -26,28 +26,6 @@ POSTGRES_PASSWORD: 'your-password-here'
 
 ## Installing Gems and Migrating the Database
 
-First, check if ruby is installed and configured for the folder:
-```
-$ ruby -v
-```
-
-If it tells you a version number, such as this:
-```
-ruby 2.6.0p0 (2018-12-25 revision 66547) [x86_64-linux]
-```
-...please skip to "Next, install the project's gems". 
-
-If it says that ruby is not installed, such as this:
-```
-rbenv: version `ruby-2.6' is not installed (set by /theodinproject/.ruby-version)
-```
-...run the following commands:
-```
-$ rbenv install 2.6.0 --verbose
-$ rbenv local 2.6.0
-```
-Now `$ ruby -v` should show the version number of ruby.
-
 Next, install the project's gems:
 ```
 $ bundle install
