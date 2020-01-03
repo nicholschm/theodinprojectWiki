@@ -25,7 +25,7 @@ sudo systemctl start postgresql
 # OPTIONAL: start postgres at system startup
 sudo systemctl enable postgresql
 ```
-Next we need to create our role. Run the following:
+Next we need to create our role. We recommend using your $USER as your postgres username (the one you see when you open a terminal). In moritz@moritz-TECRA-R940:~ the username is moritz.  Run the following:
 ```
 $ sudo -u postgres createuser yourusername -s
 $ sudo -i -u postgres psql
