@@ -28,7 +28,7 @@ POSTGRES_PASSWORD: 'your-password-here'
 
 First, check if ruby is installed and configured for the folder:
 ```
-ruby -v
+$ ruby -v
 ```
 
 If it tells you a version number, such as this:
@@ -43,10 +43,10 @@ rbenv: version `ruby-2.6' is not installed (set by /theodinproject/.ruby-version
 ```
 ...run the following commands:
 ```
-rbenv install 2.6.0 --verbose
-rbenv local 2.6.0
+$ rbenv install 2.6.0 --verbose
+$ rbenv local 2.6.0
 ```
-Now `ruby -v` should show the version number of ruby.
+Now `$ ruby -v` should show the version number of ruby.
 
 Next, install the project's gems:
 ```
