@@ -35,7 +35,7 @@ If it tells you a version number, such as this:
 ```
 ruby 2.6.0p0 (2018-12-25 revision 66547) [x86_64-linux]
 ```
-...you're good to go. 
+...please skip to "Next, install the project's gems". 
 
 If it says that ruby is not installed, such as this:
 ```
