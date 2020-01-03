@@ -10,10 +10,10 @@ $ cd theodinproject
 ## Setting up DotEnv
 TOP uses the [dotenv](https://github.com/bkeepers/dotenv) gem to manage secrets. We will need to make a copy of the `.env` file (name it `.env.local`) and add all our secrets to the new file.
 ```bash
-$ cp .env .env.local
+$ cp env.sampl .env
 ```
 
-Then edit the `.env.local` to include your Postgres Username and Password.
+Then edit the `.env` to include your Postgres Username and Password.
 
 ```yaml
 #------------------------#
