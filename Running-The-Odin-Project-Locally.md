@@ -8,7 +8,7 @@ $ cd theodinproject
 ```
 
 ## Setting up DotEnv
-TOP uses the [dotenv](https://github.com/bkeepers/dotenv) gem to manage secrets. We will need to make a copy of the `.env` file (name it `.env.local`) and add all our our secrets to the new file.
+TOP uses the [dotenv](https://github.com/bkeepers/dotenv) gem to manage secrets. We will need to make a copy of the `.env` file (name it `.env.local`) and add all our secrets to the new file.
 ```bash
 $ cp .env .env.local
 ```
@@ -25,6 +25,7 @@ POSTGRES_PASSWORD: 'your-password-here'
 
 
 ## Installing Gems and Migrating the Database
+
 Next, install the project's gems:
 ```
 $ bundle install
