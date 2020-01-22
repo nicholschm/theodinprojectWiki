@@ -37,6 +37,7 @@ test: &test
   username: YOUR_POSTGRES_USERNAME
   password: YOUR_POSTGRES_PASSWORD
 ```
+Type the username and password both without quotation marks.
 
 ## Installing Gems and Migrating the Database
 
