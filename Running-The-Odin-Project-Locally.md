@@ -2,6 +2,13 @@
 
 > This page assumes that you have already installed Ruby, Rails and PostgreSQL. Please go back to the [Linux Installation Instructions](https://github.com/TheOdinProject/theodinproject/wiki/Linux-Installation-Guide) or [Mac Installation Instructions](https://github.com/TheOdinProject/theodinproject/wiki/OSX-Installation-Guide) if you haven't already. 
 
+The very first thing you need to do is fork the repo to your own Github, similar to when contributing or adding your student solutions to the curriculum. Once that's done, make sure you clone your forked copy onto your machine.
+```bash
+$ git clone <ssh:url>
+``` 
+
+Now that you have the repo locally, we can start getting set up.
+
 First, make sure you're in the `theodinproject` directory. All instructions should be followed while inside of that directory.
 ```bash
 $ cd theodinproject
@@ -46,6 +53,12 @@ Next, install the project's gems:
 $ bundle install
 ```
 
+**Note: If this doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.**
+
+```bash
+rbenv local 2.6.5
+```
+
 When bundle has finished installing everything, it's time to get the TOP database set up.
 
 Create the databases and migrate them:
@@ -53,6 +66,8 @@ Create the databases and migrate them:
 $ rails db:create
 $ rails db:migrate
 ```
+
+**Note: If you get an error about yarn and are on a flavor of Ubuntu, follow the steps [here](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/) to install yarn on your machine. Once that's done, run the command Rails suggests and try re-running the above commands.**
 
 ## Get a Github API Token
 You will need a Github API Token when running TOP locally to update the curriculum. Without the token you will encouter rate-limiting errors and won't be able to create all the lessons.
