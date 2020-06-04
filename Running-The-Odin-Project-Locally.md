@@ -53,6 +53,11 @@ Next, install the project's gems:
 $ bundle install
 ```
 
+## Install JavaScript modules (npn packages) required by [Webpacker](https://github.com/rails/webpacker):
+```
+$ yarn install
+```
+
 **Note: If this doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.**
 
 ```bash
