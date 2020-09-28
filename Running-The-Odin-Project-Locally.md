@@ -79,7 +79,7 @@ You will need a Github API Token when running TOP locally to update the curricul
 
 You can obtain an API Token by going to [personal access tokens](https://github.com/settings/tokens) in your Github user account settings and click the "generate new token" button. This will bring you to a new page. Give your token a description in the box provided, Something like "Odin " will do. Once that is done click the "generate token" button at the bottom of the page. The token highlighted in green is your new Github API token.
 
-Copy your Github API token and edit your `.env.local` file with the content below, making sure to paste your API token in place of `<your api token here>`. Note that the `APP_ID` and `SECRET` are commented out. These are used in production and are not needed locally.
+Copy your Github API token and edit your `.env` file with the content below, making sure to paste your API token in place of `<your api token here>`. Note that the `APP_ID` and `SECRET` are commented out. These are used in production and are not needed locally.
 ```
 GITHUB_API_TOKEN: <your api token here>
 #GITHUB_APP_ID: 1234
@@ -187,7 +187,7 @@ Visit the [Google API Console](https://console.developers.google.com/) to obtain
           1.  Authorized Javascript Origins: `http://localhost:3000` *make sure to press Enter to add it*
           1.  Authorized redirects URIs: `http://localhost:3000/users/auth/google/callback` *make sure to press Enter to add it*
           1.  Click "Create" button. This will display your `Client ID` and `Client Secret` which is what you will use to get OAuth working on your local machine.
-1. Go to `.env.local` in your local project directory for The Odin Project and fill in the following:
+1. Go to `.env` in your local project directory for The Odin Project and fill in the following:
     ```
     GOOGLE_CLIENT_ID: <your client ID here>
     GOOGLE_CLIENT_SECRET: <your client secret here>
