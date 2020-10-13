@@ -68,10 +68,11 @@ $ yarn install
 
 When bundle and yarn have finished installing everything, it's time to get the TOP database set up.
 
-Create the databases and migrate them:
+Create the database and load the schema:
 ```
 $ rails db:create
-$ rails db:migrate
+$ rails db:environment:set RAILS_ENV=development
+$ rails db:schema:load
 ```
 
 ## Get a Github API Token
