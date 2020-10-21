@@ -1,4 +1,4 @@
-**This guide assumes that you have already installed Ruby and rails. To get instructions on how to do that go through the installations project [here](https://www.theodinproject.com/courses/web-development-101#installations)**
+**This guide assumes that you have already installed Ruby and rails. To get instructions on how to do that go through the installations project [here](https://www.theodinproject.com/courses/ruby-programming/lessons/installing-ruby-ruby-programming)**
 
 ## Set up Postgres
 Skip this if you have already installed and setup a user for postgresql.
