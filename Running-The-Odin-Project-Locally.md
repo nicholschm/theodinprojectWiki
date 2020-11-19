@@ -30,22 +30,6 @@ POSTGRES_USERNAME: 'your-username'
 POSTGRES_PASSWORD: 'your-password-here'
 ```
 
-## Edit database.yml
-Type `code config/database.yml` to edit the database.yml file. Go to line 20 and line 21 in the code. It should say
-```
-test: &test
-  <<: *default
-```
-Replace this code with 
-```
-test: &test
-  <<: *default
-  database: 'theodinproject_test'
-  username: YOUR_POSTGRES_USERNAME
-  password: YOUR_POSTGRES_PASSWORD
-```
-Type the username and password both without quotation marks.
-
 ## Installing Gems and Migrating the Database
 
 Next, install the project's gems:
