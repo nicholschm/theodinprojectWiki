@@ -36,12 +36,12 @@ Next, install the project's gems:
 ```
 $ bundle install
 ```
-**Note**: If you are using **Postgres.App**, you may encounter an error installing the `pg` gem. This is likely due to a PATH issue. If you receive an error stating that this gem was not installed, you will need to run:
+**Note: If you are using **Postgres.App**, you may encounter an error installing the `pg` gem. This is likely due to a PATH issue where your pg_config is unable to be found. If you receive an error stating that this gem was not installed, you will need to run the following.**
 
 ```bash
 find /Applications -name pg_config
 ```
-save the path it returns, and then run:
+Then save the path it returns, and then run:
 ```bash
 gem install pg -- --with-pg-config=YOUR_PATH_HERE
 ```
