@@ -36,8 +36,23 @@ Next, install the project's gems:
 ```
 $ bundle install
 ```
+**Note: If you are using Postgres.App, you may encounter an error installing the `pg` gem. This is likely due to a PATH issue. If you receive an error stating that this gem was not installed, you will need to either run:
 
-**Note: If this doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.**
+```bash
+find /Applications -name pg_config
+```
+save the path it returns, and then run:
+```bash
+gem install pg -- --with-pg-config=YOUR_PATH_HERE
+```
+
+or run 
+```bash
+sudo mkdir -p /etc/paths.d &&
+echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
+```.
+
+**Note: If `bundle install` doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.**
 
 ```bash
 rbenv local 2.6.5
