@@ -1,7 +1,11 @@
 ## How to Contribute
 1. Find a [issue tagged with "help wanted"](https://github.com/TheOdinProject/theodinproject/labels/Help%20Wanted) to work on. Please comment on the issue to let others know you are working on it.
 
-2. Install the app on your local machine.
+2. Install Ruby [here](https://www.theodinproject.com/courses/ruby-programming/lessons/installing-ruby-ruby-programming)
+
+3. Install Rails [here](https://www.theodinproject.com/courses/ruby-on-rails/lessons/your-first-rails-application-ruby-on-rails)
+
+4. Install the app on your local machine.
 
  * Fork and clone the app to your local machine, use [this guide](https://help.github.com/articles/fork-a-repo/) if you don't know how to do that
  * Set the upstream remote so you can keep your copy of the app synced with the original. To do that go to your terminal and `cd` into your cloned odin project app directory. Then use one of the following commands:
@@ -19,7 +23,7 @@
    * [Linux installation guide](https://github.com/TheOdinProject/theodinproject/wiki/Linux-Installation-Guide)
     * [Mac installation guide](https://github.com/TheOdinProject/theodinproject/wiki/OSX-Installation-Guide)
 
-3. Before you start working on your issue create a branch and name it like the following examples:
+5. Before you start working on your issue create a branch and name it like the following examples:
 
   If its a new feature
   ```
@@ -30,7 +34,7 @@
   $ git checkout -b fix/fixed-bug-name
   ```
 
-4. When you have finished and are ready to submit a Pull request:
+6. When you have finished and are ready to submit a Pull request:
 
   **Before you submit your pull request ensure all the tests pass**
 
