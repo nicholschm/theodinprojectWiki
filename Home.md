@@ -10,4 +10,3 @@ We abide by a [code of conduct](https://github.com/TheOdinProject/theodinproject
 
 ## Other Guides
 * [Contributing guide](https://github.com/TheOdinProject/theodinproject/wiki/Contributing-Guide)
-* [Pull Curriculum Lessons from your own fork](https://github.com/TheOdinProject/theodinproject/wiki/Updating-Lessons-from-your-own-fork)
