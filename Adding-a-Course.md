@@ -2,8 +2,8 @@
 
 1. First find the path you want to add the course to under the `db/fixtures/paths/` directory.
 2. Create a new file under the `db/fixtures/paths/<selected_path>/courses/` directory which will store your course structure - name the new file the same as what you intend to display as the course name on the site. For example `javascript_basics.rb` or `ruby.rb` etc.
-3. Find the `seed.rb` for the path you will be adding the course to `db/fixtures/paths/<your selected path name>/seed.rb`
-4. Within the path seed.rb file load your course by adding this line to the courses list: 
+3. Find the `seed.rb` file for the path you will be adding the course to `db/fixtures/paths/<your selected path name>/seed.rb`
+4. Within the paths seed.rb file, load your course by adding this line to the courses list: 
 ```
 load './db/fixtures/paths/<your selected path>/courses/<your new course name>.rb'
 ```
