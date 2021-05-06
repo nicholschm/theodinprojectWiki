@@ -1,5 +1,5 @@
 ## How to Contribute
-1. Find a [issue tagged with "help wanted"](https://github.com/TheOdinProject/theodinproject/labels/Help%20Wanted) to work on. Please comment on the issue to let others know you are working on it.
+1. Find an [issue tagged with "help wanted"](https://github.com/TheOdinProject/theodinproject/labels/Help%20Wanted) to work on. Please comment on the issue stating what you'd like to work on it and wait to be assigned before working on it. If someone else is already has been assigned and there hasn't been any activity on the issue for a while please ask the assignee if they are still working on it before taking it on yourself. 
 
 2. Install Ruby [here](https://www.theodinproject.com/courses/ruby-programming/lessons/installing-ruby-ruby-programming)
 
