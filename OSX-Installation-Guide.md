@@ -2,6 +2,25 @@
 
 > This guide assumes that you have already installed homebrew and Ruby on Rails.
 
+## Install Redis
+We use Redis for our asynchronous background jobs, for example sending emails. To get the app up and running and for all the tests to pass you will need to install Redis.
+
+First make sure that homebrew is up to date.
+```
+$ brew update
+```
+
+Then install Redis
+```
+$ brew install redis
+```
+
+Finally start the redis service
+```
+$ brew services start redis
+```
+
+ 
 ## Installing Postgresql 
 The Odin Project uses PostgreSQL as it's database. You will need to install it if you haven't already via one of the two methods below:
 
@@ -11,10 +30,7 @@ The easiest way to get up and running with Postgres is to install [Postgres.App]
 To log into the psql command line click on the elephant icon in your menu bar and choose **Open Postgres** then double click on the [database icon with your username under it.](https://imgur.com/4wHTwxv.png) Once open, continue with [Database Setup](#database-setup)
 
 ### via Brew:
-PostgreSQL is also available via Brew package manager. Before installing postgres make sure that homebrew is up to date.
-```
-$ brew update
-```
+PostgreSQL is also available via Brew package manager.
 
 First, install PostgreSQL
 ```
