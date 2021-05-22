@@ -27,9 +27,11 @@ If you would like to propose a change that is not covered in an open issue, plea
     $ git remote add upstream https://github.com/TheOdinProject/theodinproject.git
     ```
 
- * Use one of the following operating system specific guides to set up the Odin Project app on your machine:
+ * Use one of the following operating system specific guides to set up The Odin Project app on your machine:
     * [Linux installation guide](https://github.com/TheOdinProject/theodinproject/wiki/Linux-Installation-Guide)
     * [Mac installation guide](https://github.com/TheOdinProject/theodinproject/wiki/OSX-Installation-Guide)
+
+ * Follow this guide to [run The Odin Project app locally](https://github.com/TheOdinProject/theodinproject/wiki/Running-The-Odin-Project-Locally).
 
 4. Before you start working on your issue create a branch and name it like the following examples:
 
@@ -42,18 +44,22 @@ If you would like to propose a change that is not covered in an open issue, plea
     $ git checkout -b fix/fixed-bug-name
     ```
 
-5. When you have finished, ensure that all that all tests pass and the code is formatted correctly.
-
-    Run the rspec test suite
+5. When you have finished, ensure that the code is formatted correctly and all tests pass:
+ 
+    ```
+    $ rubocop
+    ```
+ 
+    ```
+    $ yarn eslint
+    ```
 
     ```
     $ rspec
     ```
-
-    Run rubocop
  
     ```
-    $ rubocop
+    $ yarn test
     ```
 
 6. Submit a pull request:
