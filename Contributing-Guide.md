@@ -1,4 +1,4 @@
-Thank you for expressing interest in contributing to our curriculum!
+Thank you for expressing interest in contributing!
 
 If you would like to contribute, but are not sure how, find an [issue tagged with "help wanted"](https://github.com/TheOdinProject/theodinproject/labels/Help%20Wanted) to work on.
 * Please comment on the issue stating what you'd like to work on and wait to be assigned before working on it. 
@@ -28,44 +28,45 @@ If you would like to propose a change that is not covered in an open issue, plea
     ```
 
  * Use one of the following operating system specific guides to set up the Odin Project app on your machine:
-   * [Linux installation guide](https://github.com/TheOdinProject/theodinproject/wiki/Linux-Installation-Guide)
+    * [Linux installation guide](https://github.com/TheOdinProject/theodinproject/wiki/Linux-Installation-Guide)
     * [Mac installation guide](https://github.com/TheOdinProject/theodinproject/wiki/OSX-Installation-Guide)
 
 4. Before you start working on your issue create a branch and name it like the following examples:
 
-  If its a new feature
-  ```
-  $ git checkout -b feature/new-feature-name`
-  ```
-  If its a bug fix
-  ```
-  $ git checkout -b fix/fixed-bug-name
-  ```
+    If its a new feature
+    ```
+    $ git checkout -b feature/new-feature-name`
+    ```
+    If its a bug fix
+    ```
+    $ git checkout -b fix/fixed-bug-name
+    ```
 
 5. When you have finished, ensure that all that all tests pass and the code is formatted correctly.
 
-  **Run the rspec test suite**
+    Run the rspec test suite
 
-  ```
-  $ rspec
-  ```
+    ```
+    $ rspec
+    ```
 
-  **Run rubocop**
-
-  ```
-  $ rubocop
-  ```
+    Run rubocop
+ 
+    ```
+    $ rubocop
+    ```
 
 6. Submit a pull request:
 
-  **Push your branch to your fork**
-  ```
-  $ git push origin <your branch name here>
-  ```
-  **Create a pull request**
-   * Go to your fork on Github after you have pushed up your branch. A new button should be visible near the top of the page. It will allow you to create a pull request to the original Odin Project Repo.
+  * Push your branch to your fork
+    ```
+    $ git push origin <your branch name here>
+    ```
 
-  * Please Link to the issue your pull request resolves in the body of your pull request.
+  * Create a pull request
+    * Go to your fork on Github after you have pushed up your branch. A new button should be visible near the top of the page. It will allow you to create a pull request to the original Odin Project Repo.
+
+    * If the PR is related to an existing issue, link it in the body of your pull request, such as "resolves #1234".
 
 ## Need Help with Anything Here?
 Please let us know if you require any help doing any of the steps in this guide in our [Discord's contribution-suggestions channel](https://discordapp.com/channels/505093832157691914/540903304046182425)
