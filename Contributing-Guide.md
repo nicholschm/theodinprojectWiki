@@ -37,7 +37,7 @@ If you would like to propose a change that is not covered in an open issue, plea
 
     If it's a new feature
     ```
-    $ git checkout -b feature/new-feature-name`
+    $ git checkout -b feature/new-feature-name
     ```
     If it's a bug fix
     ```
