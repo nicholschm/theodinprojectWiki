@@ -22,12 +22,16 @@ This is what your new lesson attributes should look like when you are done:
 2. Next find the course in that path you want the lesson to appear in `db/fixtures/paths/<selected_path>/courses/`
 3. When you have found the correct path and course, you next have to find the section within that course you want the lesson to be in.
 4. When you have found the correct section simply add the lesson to the section by fetching the lesson using the title you provided in the attributes in step one of this guide:
+
+**Note: The order of the lessons matter. They will display on the website in the same order.**
 ```
 section.add_lessons(
   foundation_lessons.fetch('Existing Lesson'),
   foundation_lessons.fetch('My New Lesson'),
 )
 ```
+
+
 
 #### 3. Verify the Lesson has been Successfully Added
 
