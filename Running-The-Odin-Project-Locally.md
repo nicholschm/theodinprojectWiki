@@ -52,7 +52,7 @@ gem install pg -- --with-pg-config=YOUR_PATH_HERE
 rbenv local 2.7.3
 ```
 
-## Install JavaScript modules (npn packages) required by [Webpacker](https://github.com/rails/webpacker):
+## Install JavaScript modules (npm packages) required by [Webpacker](https://github.com/rails/webpacker):
 ```
 $ yarn install
 ```
