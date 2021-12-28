@@ -19,8 +19,7 @@ TOP uses the [dotenv](https://github.com/bkeepers/dotenv) gem to manage secrets.
 ```bash
 $ cp env.sample .env
 ```
-
-Then edit the `.env` to include your Postgres Username and Password.
+Then edit the newly created `.env` file to include your Postgres Username and Password.
 
 ```yaml
 #------------------------#
