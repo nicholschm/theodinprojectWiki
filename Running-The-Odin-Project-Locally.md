@@ -48,7 +48,7 @@ gem install pg -- --with-pg-config=YOUR_PATH_HERE
 **Note: If `bundle install` doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.**
 
 ```bash
-rbenv local 2.7.3
+rbenv local 2.7.4
 ```
 
 ## Install JavaScript modules (npm packages) required by [Webpacker](https://github.com/rails/webpacker):
