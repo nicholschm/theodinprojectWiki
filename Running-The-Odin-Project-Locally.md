@@ -91,6 +91,8 @@ $ rspec
 
 **Note: If you get an error stating `Cliver::Dependency::NotFound` and `Could not find an executable` and don't have Google Chrome installed, try installing Chrome.**
 
+**Note: If ALL of your tests fail, check to make sure `bundle install` completed without error. You may need to allocate more space to your partition.
+
 ## Seeding the Database and Populating the Lesson content
 Next you need to seed the database with the course and lesson data.
 ```
