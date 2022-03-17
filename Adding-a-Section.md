@@ -34,7 +34,7 @@ course.add_section do |section|
 end
 ```
 
-8. Add lessons to the section, [use this guide](https://github.com/TheOdinProject/theodinproject/wiki/Adding-a-Lesson-to-the-Curriculum) to find out how to add lessons:
+8. Add lessons to the section, using our [adding a lesson](https://github.com/TheOdinProject/theodinproject/wiki/Adding-a-Lesson) guide to find out how to add lessons:
 ```
 course.add_section do |section|
   section.title = 'A New Section Title'
