@@ -1,12 +1,12 @@
 1. `git rebase -i main`
 2. Replace `pick` at the start of each line **except the top line** with `s`( which stands for squash) then save.
 
-Example:
-```bash
-pick 47a32d7e WIP: first Commit
-s bc0037a1 WIP: second Commit
-s c5b81945 WIP: third Commit
-```
+    Example:
+    ```bash
+    pick 47a32d7e WIP: first Commit
+    s bc0037a1 WIP: second Commit
+    s c5b81945 WIP: third Commit
+    ```
 
 3. You should now be able to reword the first commit with the normal `because` and `This commit` template we use - example here
 
