@@ -3,6 +3,8 @@ https://softwareengineering.stackexchange.com/a/263172
 
 
 ### How
+Before you start, make sure you are in the feature branch you want to squash and **not** the `main` branch.
+
 1. `git rebase -i main`
 2. Replace `pick` at the start of each line **except the top line** with `s`( which stands for squash) then save.
 
@@ -19,7 +21,7 @@ https://softwareengineering.stackexchange.com/a/263172
 
     **If you have already pushed to the remote previously**
 
-    *Warning: only force push if you are the only one working with on the branch. Never force push to branches anyone else is working on, and especially never force push to the main branch*
+    *Warning: only force push if you are the only one working on the branch. Never force push to branches anyone else is working on, and especially never force push to the main branch*
 
     * You will have to force push your branch because your commits have been rebased: `git push -f` 
   
