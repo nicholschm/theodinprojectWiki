@@ -1,3 +1,8 @@
+### Why do I need to squash my commits?
+https://softwareengineering.stackexchange.com/a/263172
+
+
+### How
 1. `git rebase -i main`
 2. Replace `pick` at the start of each line **except the top line** with `s`( which stands for squash) then save.
 
