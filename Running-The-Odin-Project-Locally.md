@@ -20,8 +20,8 @@ This page assumes that you have already forked and cloned [The Odin Project](htt
 
 ## Initial Installations
 
-* Install Ruby by following the instructions in our [Installing Ruby](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/installing-ruby-ruby-programming) lesson.
-* Install Rails by following steps 1.1 and 1.2 in [your first Rails app](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/your-first-rails-application-ruby-on-rails#your-first-rails-app) from our Installing Rails project.
+* Install Ruby by following the instructions in our [Installing Ruby](https://www.theodinproject.com/lessons/ruby-installing-ruby) lesson.
+* Install Rails by following steps 1.1 and 1.2 in [your first Rails app](https://www.theodinproject.com/lessons/ruby-on-rails-installing-rails#your-first-rails-app) from our Installing Rails project.
 * Follow the instructions from one of the following operating system specific guides:
     * [Linux Installation Guide](https://github.com/TheOdinProject/theodinproject/wiki/Linux-Installation-Guide)
     * [Mac Installation Guide](https://github.com/TheOdinProject/theodinproject/wiki/OSX-Installation-Guide)
