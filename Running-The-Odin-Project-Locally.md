@@ -133,16 +133,18 @@ $ rails curriculum:update_content
 ```
 
 ## Start the Server
+First install foreman:
+```bash
+$ gem install foreman
+```
 
 You can now run the app on your local machine. First, start the server:
 
 ```bash
-$ rails server
+$ foreman start
 ```
 
 Then visit [http://localhost:3000](http://localhost:3000) to view TOP in your browser!
-
-**Note for macOS 10.13 and above:** You may need to run `export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES` before `rails server`. See [this blog post](https://blog.phusion.nl/2017/10/13/why-ruby-app-servers-break-on-macos-high-sierra-and-what-can-be-done-about-it/) for more information.
 
 ## Optional Steps
 
