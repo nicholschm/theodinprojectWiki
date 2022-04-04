@@ -15,7 +15,7 @@ Before you start, make sure you are in the feature branch you want to squash and
     s c5b81945 WIP: third Commit
     ```
 
-3. You should now be able to reword the first commit with the normal `because` and `This commit` template we use - example here
+3. You should now be able to reword the first commit with the normal `because` and `This commit` template we use - [example here](https://github.com/TheOdinProject/theodinproject/pull/2808/commits/fd2feaef36ffa27c2862480ce58a34e3c49ed812)
 
 4. Pushing to remote
 
