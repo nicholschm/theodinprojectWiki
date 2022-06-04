@@ -67,7 +67,7 @@ gem install pg -- --with-pg-config=YOUR_PATH_HERE
 **Note: If `bundle install` doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.**
 
 ```bash
-rbenv local 2.7.4
+rbenv local 3.1.2
 ```
 
 ## Install JavaScript Modules 
