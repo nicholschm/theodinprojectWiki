@@ -148,22 +148,6 @@ Then visit [http://localhost:3000](http://localhost:3000) to view TOP in your br
 
 ## Optional Steps
 
-### Mailchimp API Key and List ID
-
-[Mailchimp](https://mailchimp.com/) integration is setup to add newly registered users to a specified mailing list. This is done via the [Mailchimp API](https://developer.mailchimp.com/) and gem [Gibbon](https://github.com/amro/gibbon). In order to enable this functionality in your local development and test environments you'll need to:
-
-- Create a [Mailchimp account](https://login.mailchimp.com/signup/)
-- Get a Mailchimp [API key](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
-- Create a [list](https://developer.mailchimp.com/documentation/mailchimp/reference/lists/) to which development/test members will be added
-- Get the [list ID](https://kb.mailchimp.com/lists/manage-contacts/find-your-list-id)
-
-Finally, you need to add the API key and list ID to your `.env`:
-
-```
-MAILCHIMP_API_KEY: <your api key here>
-MAILCHIMP_LIST_ID: <your list id here>
-```
-
 ### Github OAuth
 We allow users to create an account on the site with Github OAuth. To get this feature working locally follow the instructions in this section.
 
