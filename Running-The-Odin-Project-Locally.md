@@ -14,7 +14,6 @@ This page assumes that you have already forked and cloned [The Odin Project](htt
 * [Seed the Database and Populate the Lesson Content](#seed-the-database-and-populate-the-lesson-content)
 * [Start the Server](#start-the-server)
 * [Optional Steps](#optional-steps)
-    * [Mailchimp API Key and List ID](#mailchimp-api-key-and-list-id)
     * [Github OAuth](#github-oauth)
     * [Google OAuth](#google-oauth)
 
