@@ -9,9 +9,9 @@ If you would like to propose a small change (fixing a typo, updating a link, etc
 If you would like to propose a change that is not covered in an open issue, please start by creating a new issue or discussing this in our [Discord's contribution-suggestions channel](https://discordapp.com/channels/505093832157691914/540903304046182425).
 
 ## How to Contribute
-1. Install Ruby [here](https://www.theodinproject.com/courses/ruby-programming/lessons/installing-ruby-ruby-programming)
+1. Install Ruby [here](https://www.theodinproject.com/lessons/ruby-installing-ruby)
 
-2. Install Rails [here](https://www.theodinproject.com/courses/ruby-on-rails/lessons/your-first-rails-application-ruby-on-rails)
+2. Install Rails [here](https://www.theodinproject.com/lessons/ruby-on-rails-installing-rails)
 
 3. Install the app on your local machine.
 
