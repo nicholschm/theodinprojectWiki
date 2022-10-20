@@ -11,7 +11,7 @@ This is what your new lesson attributes should look like when you are done:
   'Your New Lesson Title' => {
     title: 'Your New Lesson Title',
     description: 'This is a new lesson',
-    url: '/foundations/new_lesson_github_path.md',
+    github_path: '/foundations/new_lesson_github_path.md',
     identifier_uuid: 'a4baeee4-7bab-47ba-8157-c8f52b204734',
   },
 }
