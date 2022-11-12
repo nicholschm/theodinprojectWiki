@@ -10,7 +10,8 @@
 #### How to Contribute
 
 [[Contributing Guide]]  
-[[Squashing Commits]]  
+[[Squashing Commits]]   
+[[Significant Contributors]]  
 
 *** 
 
