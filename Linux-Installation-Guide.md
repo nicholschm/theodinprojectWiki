@@ -1,4 +1,4 @@
-**This guide assumes that you have already installed Ruby and rails. To get instructions on how to do that go through the installations project [here](https://www.theodinproject.com/courses/ruby-programming/lessons/installing-ruby-ruby-programming)**
+**This guide assumes that you have already installed Ruby and rails. To get instructions on how to do that go through the installations project [here](https://www.theodinproject.com/lessons/ruby-installing-ruby)**
 
 ## Install Redis
 We use Redis for our asynchronous background jobs, for example sending emails. To get the app up and running and for all the tests to pass you will need to install Redis.
