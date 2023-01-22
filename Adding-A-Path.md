@@ -5,20 +5,20 @@
 
 3. At the top of the `seed.rb` file, create your new path:
  ```
-@path = Seeds::PathSeeder.create do |path|
+@path = Seeds::PathSeeder.build do |path|
 end
 ```
 
 4. Give the path a title:
 ```
-@path = Seeds::PathSeeder.create do |path|
+@path = Seeds::PathSeeder.build do |path|
   path.title = 'Full Stack JavaScript'
 end
 ```
 
 5. Give the path a description:
 ```
-@path = Seeds::PathSeeder.create do |path|
+@path = Seeds::PathSeeder.build do |path|
   path.title = 'Full Stack JavaScript'
   path.description = "This path teaches you x and y"
 end
@@ -26,7 +26,7 @@ end
 
 6. [Generate a unique uuid](https://www.uuidgenerator.net/version4) and give the path an identifier_uuid attribute:
 ```
-@path = Seeds::PathSeeder.create do |path|
+@path = Seeds::PathSeeder.build do |path|
   path.title = 'Full Stack JavaScript'
   path.description = "This path teaches you x and y"
   path.identifier_uuid = '624d152c-b522-4f7a-86aa-8f2d9c84b951'
@@ -35,7 +35,7 @@ end
 
 7. Finally give your path a position, this attribute determines what position the path will be displayed at on the https://www.theodinproject.com/paths page.
 ```
-@path = Seeds::PathSeeder.create do |path|
+@path = Seeds::PathSeeder.build do |path|
   path.title = 'Full Stack JavaScript'
   path.description = "This path teaches you x and y"
   path.identifier_uuid = '624d152c-b522-4f7a-86aa-8f2d9c84b951'
