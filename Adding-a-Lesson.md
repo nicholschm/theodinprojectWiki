@@ -33,6 +33,6 @@ section.add_lessons(
 
 #### 3. Verify the Lesson has been Successfully Added
 
-1. Run the seeds task `rails db:seed`
+1. Run the seeds task `bin/rails db:seed`
 2. Run the app locally and check the lesson is where it should be.
 3. All done 🎉 
