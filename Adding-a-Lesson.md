@@ -3,7 +3,7 @@
 #### 1. Adding the Lessons Attributes
 1. Go to `db/fixtures/lessons` and choose the appropriate file that the lesson should go in.
 2. Add the new lessons attributes to the bottom of the list.
-3. [Generate a unique uuid](https://www.uuidgenerator.net/) and use it for the identifier_uuid attribute for the new lesson.
+3. ** **Important** ** Make sure to give the lessons `identifier_uuid` attribute a value of `'create_uuid'`. This will be replaced by a real uuid automatically when the seed script is run later.
 
 This is what your new lesson attributes should look like when you are done:
 ```
@@ -12,7 +12,7 @@ This is what your new lesson attributes should look like when you are done:
     title: 'Your New Lesson Title',
     description: 'This is a new lesson',
     github_path: '/foundations/new_lesson_github_path.md',
-    identifier_uuid: 'a4baeee4-7bab-47ba-8157-c8f52b204734',
+    identifier_uuid: 'create_uuid',
   },
 }
 ```
@@ -30,8 +30,6 @@ section.add_lessons(
   foundation_lessons.fetch('My New Lesson'),
 )
 ```
-
-
 
 #### 3. Verify the Lesson has been Successfully Added
 
