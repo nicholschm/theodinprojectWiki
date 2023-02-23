@@ -49,6 +49,6 @@ end
 ```
 
 #### 2. Verify the Section has been Successfully Added
-1. Run the seeds task rails db:seed
+1. Run the seeds task `bin/rails db:seed`
 2. Run the app locally and check the section is where it should be.
 3. All done 🎉
