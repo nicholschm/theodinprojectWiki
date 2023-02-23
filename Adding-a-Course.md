@@ -50,6 +50,6 @@ course.delete_removed_seeds
 ```
 
 #### 4. Verify the Course has been Successfully Added
-1. Run the seeds task rails db:seed
+1. Run the seeds task: `bin/rails db:seed`
 2. Run the app locally and check the course is where it should be.
 3. All done 🎉
