@@ -31,12 +31,12 @@ course = @path.add_course do |course|
 end
 ```
 
-4. [Generate a unique uuid](https://www.uuidgenerator.net/version4) and give the course an identifier_uuid attribute:
+4  Give the course an identifier_uuid attribute value of `'create_uuid'`. This will be replaced by a real uuid automatically when the seed script is run later.
 ```
 course = @path.add_course do |course|
   course.title = 'JavaScript Basics'
   course.description = 'A JavaScript Basics course'
-  course.identifier_uuid = '<paste the uuid you generated here>'
+  course.identifier_uuid = 'create_uuid'
 end
 ```
 
