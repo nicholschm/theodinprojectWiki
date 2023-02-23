@@ -24,12 +24,12 @@ end
 end
 ```
 
-6. [Generate a unique uuid](https://www.uuidgenerator.net/version4) and give the path an identifier_uuid attribute:
+6. Give the path an identifier_uuid attribute value of `'create_uuid'`. This will be replaced by a real uuid automatically when the seed script is run later.
 ```
 @path = Seeds::PathSeeder.build do |path|
   path.title = 'Full Stack JavaScript'
   path.description = "This path teaches you x and y"
-  path.identifier_uuid = '624d152c-b522-4f7a-86aa-8f2d9c84b951'
+  path.identifier_uuid = 'create_uuid'
 end
 ```
 
@@ -38,7 +38,7 @@ end
 @path = Seeds::PathSeeder.build do |path|
   path.title = 'Full Stack JavaScript'
   path.description = "This path teaches you x and y"
-  path.identifier_uuid = '624d152c-b522-4f7a-86aa-8f2d9c84b951'
+  path.identifier_uuid = 'create_uuid'
   path.position = 3
 end
 ```
@@ -55,6 +55,6 @@ end
 
 
 #### 4. Verify the Path has been Successfully Added
-1. Run the seeds task rails db:seed
+1. Run the seeds task: `bin/rails db:seed`
 2. Run the app locally and check the path is where it should be and contains the courses, sections and lessons you expect.
 3. All done 🎉
