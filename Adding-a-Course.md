@@ -31,7 +31,7 @@ course = @path.add_course do |course|
 end
 ```
 
-4  Give the course an identifier_uuid attribute value of `'create_uuid'`. This will be replaced by a real uuid automatically when the seed script is run later.
+4. Give the course an identifier_uuid attribute value of `'create_uuid'`. This will be replaced by a real uuid automatically when the seed script is run later.
 ```
 course = @path.add_course do |course|
   course.title = 'JavaScript Basics'
