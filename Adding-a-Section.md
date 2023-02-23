@@ -25,12 +25,12 @@ course.add_section do |section|
 end
 ```
 
-7. [Generate a unique uuid](https://www.uuidgenerator.net/version4) and give the section an identifier_uuid attribute:
+7. Give the section an identifier_uuid attribute value of `'create_uuid'`. This will be replaced by a real uuid automatically when the seed script is run later.
 ```
 course.add_section do |section|
   section.title = 'A New Section Title'
   section.description = 'A brief description of what the section covers.'
-  section.identifier_uuid = '<paste the uuid you generated here>'
+  section.identifier_uuid = 'create_uuid'
 end
 ```
 
@@ -39,7 +39,7 @@ end
 course.add_section do |section|
   section.title = 'A New Section Title'
   section.description = 'A brief description of what the section covers.'
-  section.identifier_uuid = '<paste the uuid you generated here>'
+  section.identifier_uuid = 'create_uuid'
 
   section.add_lessons(
     ruby_lessons.fetch('A new lesson'),
