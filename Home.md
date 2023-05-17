@@ -1,6 +1,6 @@
 # Welcome to the The Odin Project wiki!
 
-We abide by a [code of conduct](https://github.com/TheOdinProject/theodinproject/tree/master/doc/code_of_conduct.md)
+We abide by a [code of conduct](https://github.com/TheOdinProject/.github/blob/main/CODE_OF_CONDUCT.md)
 
 ## Getting Started
 * Read through our [contributing guide](https://github.com/TheOdinProject/theodinproject/blob/main/CONTRIBUTING.md) before suggesting or submitting any changes
