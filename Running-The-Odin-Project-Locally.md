@@ -209,6 +209,5 @@ Visit the [Google API Console](https://console.developers.google.com/) to obtain
     ```
 To test all this is working correctly, run the app locally and try to sign up with Google.
 
-## Need Help?
-
-If you have any problems getting anything set up in this guide please let us know in our [contribution-suggestions-bugs-discussions channel](https://discordapp.com/channels/505093832157691914/540903304046182425) on Discord.
+## Need Help with Anything Here?
+If you run into any problems with the above instructions or have suggestions on how to improve them, please let us know by [creating an issue](https://github.com/TheOdinProject/theodinproject/issues).
