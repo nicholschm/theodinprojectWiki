@@ -1,5 +1,5 @@
 ### What are they?
-Review apps are temporary and disposable instances of the Odin Project app attached to pull requests. They allow us to test changes made in a given pull request within a safe testing environment before we hit merge - without all the hassle of pulling down the changes to our local machines.
+[Review apps](https://devcenter.heroku.com/articles/github-integration-review-apps) are temporary and disposable instances of the Odin Project app attached to pull requests. They allow us to test changes made in a given pull request within a safe testing environment before we hit merge - without all the hassle of pulling down the changes to our local machines.
 
 ### How do I create them?
 * Review apps will be automatically created and attached to any pull request an Odin team member opens.
