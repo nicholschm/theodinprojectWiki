@@ -6,6 +6,9 @@ We abide by a [code of conduct](https://github.com/TheOdinProject/.github/blob/m
 * Read through our [contributing guide](https://github.com/TheOdinProject/theodinproject/blob/main/CONTRIBUTING.md) before suggesting or submitting any changes
 * Get TOP up and running locally with [Running The Odin Project Locally](https://github.com/TheOdinProject/theodinproject/wiki/Running-The-Odin-Project-Locally)
 
+## Testing
+* [Pull request review apps](https://github.com/TheOdinProject/theodinproject/wiki/Review-Apps)
+
 ## Working with the Curriculum Seeds
 * [Adding a Lesson](https://github.com/TheOdinProject/theodinproject/wiki/Adding-a-Lesson)
 * [Adding a Section](https://github.com/TheOdinProject/theodinproject/wiki/Adding-a-Section)
