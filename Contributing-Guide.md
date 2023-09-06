@@ -57,10 +57,6 @@ If you would like to propose a change that is not covered in an open issue, plea
     ```
     $ rspec
     ```
- 
-    ```
-    $ yarn test
-    ```
 
 6. Submit a pull request:
 
