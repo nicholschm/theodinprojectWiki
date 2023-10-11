@@ -14,3 +14,7 @@ We abide by a [code of conduct](https://github.com/TheOdinProject/.github/blob/m
 * [Adding a Section](https://github.com/TheOdinProject/theodinproject/wiki/Adding-a-Section)
 * [Adding a Course](https://github.com/TheOdinProject/theodinproject/wiki/Adding-a-Course)
 * [Adding a Path](https://github.com/TheOdinProject/theodinproject/wiki/Adding-a-Path)
+
+## Trouble shooting
+[Troubleshooting Production](https://github.com/TheOdinProject/theodinproject/wiki/Troubleshooting-Production)
+
