@@ -20,4 +20,10 @@
 [[Adding a Course]]  
 [[Adding a Lesson]]  
 [[Adding a Path]]  
-[[Adding a Section]]  
+[[Adding a Section]]
+
+***
+
+#### Troubleshooting
+
+[[Production]]  
