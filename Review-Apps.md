@@ -4,7 +4,6 @@
 ### How do I create them?
 * Review apps will be automatically created and attached to any pull request an Odin team member opens.
 * They cost money for the length of time they exist. So we have them set up to be deleted 24 hours after creation. If you need to recreate a review app, simply add the "create-review-app" label to the PR and a GitHub action will take care of the rest.  
-* If a review app isn't automatically created for a PR. This probably means the PR originates from a fork. We normally see this on PRs made by contributors not on the team since they always have to work through a fork of the site. In this case, we need to create the review app manually through Heroku. 
 
 #### Manually creating review apps
 We only have a limited number of seats on Heroku, which means only a few maintainers have access to manually create review apps for the moment.
