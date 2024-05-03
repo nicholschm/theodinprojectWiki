@@ -1,6 +1,6 @@
 # Running TOP Locally
 
-This page assumes that you have already forked and cloned [The Odin Project](https://github.com/TheOdinProject/theodinproject) (TOP) repo. If you have not, follow the instructions for [setting up a local clone](https://github.com/TheOdinProject/theodinproject/blob/main/CONTRIBUTING.md#setting-up-your-local-clone) from our contributing guide before continuing.
+This page assumes that you have already forked and cloned [The Odin Project](https://github.com/TheOdinProject/theodinproject) (TOP) repo. If you have not, follow the instructions for [setting up a local clone](https://github.com/TheOdinProject/.github/blob/main/CONTRIBUTING.md#setting-up-your-local-clone) from our contributing guide before continuing.
 
 ## Table of Contents
 
@@ -63,11 +63,21 @@ Then save the path it returns, and then run:
 gem install pg -- --with-pg-config=YOUR_PATH_HERE
 ```
 
-**Note: If `bundle install` doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.**
+**Note: If `bundle install` doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.** N
 
 ```bash
-rbenv local 3.2.2
+rbenv local 3.3.0
 ```
+
+**Note: If `bundle install` fails due to “An error occurred while installing sassc (2.4.0), and Bundler cannot continue", follow these instructions to install sassc:**
+
+```bash
+$ sudo apt install g++
+$ gem install sassc
+```
+
+Then retry executing `bundle install`.
+
 
 ## Install JavaScript Modules 
 
@@ -77,7 +87,7 @@ These JavaScript modules (npm packages) are required by [Webpacker](https://gith
 $ yarn install
 ```
 
-**Note: If you get an error about yarn and are on a flavor of Ubuntu, follow the steps outlined in [how to install yarn on Ubuntu](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/) to install yarn on your machine. Once that's done, run the command Rails suggests and try re-running the above commands.**
+**Note: If you get an error about yarn and are on a flavor of Ubuntu, follow the steps outlined in [how to install yarn on Ubuntu](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-20-04/) to install yarn on your machine. Once that's done, run the command Rails suggests and try re-running the above commands.**
 
 ## Create the Database
 
@@ -144,6 +154,20 @@ $ foreman start
 ```
 
 Then visit [http://localhost:3000](http://localhost:3000) to view TOP in your browser!
+
+**Note: If you encounter an error "You are connecting to Redis 6.0.16, Sidekiq requires Redis 6.2.0 or greater" when executing `foreman start`, you can ensure Redis is up to date by:**
+
+```bash
+$ sudo add-apt-repository ppa:redislabs/redis, enter to continue
+$ sudo apt-get update
+$ sudo apt-get install redis
+```
+
+Then check your version with the following code to ensure it is up to date:
+
+```bash
+$ redis-server -v
+```
 
 ## Optional Steps
 

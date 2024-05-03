@@ -13,7 +13,7 @@ Redis should have started automatically after installing it, to verify run the f
 $ sudo systemctl status redis-server
 ```
 
-It should see something that says Redis is active.
+You should see something that says Redis is active.
 
 ## Set up Postgres
 Skip this if you have already installed and setup a user for postgresql.
