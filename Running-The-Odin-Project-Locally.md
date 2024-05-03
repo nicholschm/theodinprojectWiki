@@ -63,7 +63,7 @@ Then save the path it returns, and then run:
 gem install pg -- --with-pg-config=YOUR_PATH_HERE
 ```
 
-**Note: If `bundle install` doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.** N
+**Note: If `bundle install` doesn't work and you get a "rbenv version" error of some kind, try running the following command to set your Ruby version in the project.**
 
 ```bash
 rbenv local 3.3.0
